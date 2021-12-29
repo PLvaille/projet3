@@ -1,0 +1,91 @@
+@keyframes spinner{
+    0% {      
+        opacity:1;
+    }
+    70%{
+        transform:scaleY(1);
+        opacity: 1;
+    }
+    100% {
+        transform:scaleY(0);
+        opacity:0;
+    }
+}
+
+@keyframes reveal {
+    99%{
+        height: 0;
+        transform: scaleY(0);
+    }
+    100% {
+        height: auto;
+        transform: scaleY(1);
+        opacity:1;
+    }
+}
+
+.fullpage {  
+    height: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    animation:reveal 250ms 2250ms forwards;
+}
+
+@keyframes reveal_menu {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
+
+.section__menu__loader {
+    animation: reveal_menu 1500ms;
+    transform-origin: top;
+}
+
+
+@keyframes anim_btn {
+    0%{
+        background-image: linear-gradient(to bottom, $color_secondary 15%, $color_primary, $color_primary);
+    }
+    10% {
+        background-image: linear-gradient(to bottom,$color_primary, $color_secondary 15%, $color_primary);
+    }
+    20% {
+        background-image: linear-gradient(to bottom, $color_primary, $color_secondary 25%, $color_primary);
+    }
+    30% {
+        background-image: linear-gradient(to bottom,$color_primary, $color_secondary 35%, $color_primary);
+    }
+    40% {
+        background-image: linear-gradient(to bottom,$color_primary, $color_secondary 50%, $color_primary);
+    }
+    50% {
+        background-image: linear-gradient(to bottom,$color_primary, $color_secondary 65%, $color_primary);
+    }
+    60% {
+        background-image: linear-gradient(to bottom,$color_primary, $color_secondary 75%, $color_primary);
+    }
+    70% {
+        background-image: linear-gradient(to bottom,$color_primary, $color_secondary 85%, $color_primary);
+    }
+    80% {
+        background-image: linear-gradient(to bottom,$color_primary, $color_secondary 90%, $color_primary);
+    }
+    90% {
+        background-image: linear-gradient(to bottom,$color_primary, $color_secondary 95%, $color_primary);
+    } 
+    100% {
+        background-image: linear-gradient(to bottom,$color_primary, $color_secondary 100%, $color_primary);
+    }
+}
+
+
+@keyframes anim_nouveau {
+    to {
+        transform : scale(1.08);
+        border-radius:6px;
+    }
+}

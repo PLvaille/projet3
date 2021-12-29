@@ -1,0 +1,42 @@
+.presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    max-width: $max_width_body;
+    & img {     
+        z-index: 1;
+        height:fit-content;
+        max-height: 280px;
+        object-fit: cover;
+        object-position: 50% 80%;
+    }
+
+    &__titre{     
+        position:relative;
+        background: $color_grey_light;
+        margin-top:-40px;
+        padding-top: 10px;
+        z-index: 2;  
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 40px 40px 0 0;
+
+        & > i {
+            color:$color_grey_darker;
+            font-size: 40px;
+            margin-right:10%;
+            &:hover {
+                margin-top:6px;
+                @include heart_fill;
+            }
+        }
+        
+        & h2 {
+            margin-left:12%;
+        }
+    }
+    
+}

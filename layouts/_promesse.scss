@@ -1,0 +1,15 @@
+.promesse {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background: $color_grey_light;
+	padding-bottom: 6%;
+		&__texte {
+			width: 80%;	
+			margin:0% auto;
+			}
+			& h1:nth-child(2) {
+				font-size: 20px;
+			}
+}

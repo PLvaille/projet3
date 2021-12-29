@@ -1,0 +1,57 @@
+.tuto { 
+	width: 100%;
+	padding-top:2%;
+	display: flex;
+	flex-direction: column;
+
+	h2 {
+		margin-left:4%;
+	}
+	
+	&__bulle {
+		@include box-shad;
+		padding:0 14px;
+		display: flex;	
+		align-items: center;
+		width: 75%;
+		margin: 3% auto;
+		border-radius: 30px;
+		background: $color_grey_light;
+		transition: all linear 200ms;
+					
+			&__icon {
+				width: 20px;
+				color: ($color_grey_darker);					
+			}
+			
+			&:hover {
+				background-color: darken($color_grey_purp, 5%);
+				@include box-shad($color_primary_lighter);
+			}
+			
+			&:hover i{
+				color: $color_primary;
+			}
+			
+		& p:first-child {
+			color:#fff;
+			background: $color_primary;
+			padding:4px 9px;
+			border-radius: 50%;
+			position: relative;	
+			left:-28px;
+		}
+
+		& p:last-child {
+			font-size: 16px;
+			margin:0 auto;
+			font-weight: bold;
+			color:black;	
+		}	
+	}	
+}
+
+#icon01 {
+	padding-left:6px;
+}
+

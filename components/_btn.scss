@@ -1,0 +1,25 @@
+.btn__cta {
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4% auto;
+    max-width: 42%;
+    min-width: 220px;
+    height:80px;
+    border-radius: 50px;
+    padding: 4%;
+    @include box-shad(darken($color_grey_dark, 20%));
+    background-image: linear-gradient(to bottom, $color_secondary 10%, $color_primary, $color_primary);
+
+    &:hover { 
+        @include box-shad(darken($color_grey_dark, 40%));    
+        animation: anim_btn 0.3s ease-in-out forwards reverse;     
+    }
+    & span {
+        color:$color_background;
+    }
+
+}

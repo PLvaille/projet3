@@ -1,0 +1,87 @@
+.section__menu {
+    display: flex;
+    flex-direction: column;
+    margin-block: 0;
+    background-color:$color_grey_light;
+    padding:2% 0 6% 0;
+    &__resultat {        
+        height: 80px;
+        display:flex;
+        text-overflow: ellipsis; 
+        width:80%;
+        margin:2.5% auto;
+        @include box-shad;
+        background-color: $color_background;
+        border-radius: 30px;
+        cursor:pointer;
+        &__sous_texte {             
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;  
+            text-overflow: ellipsis;    
+            width:85%;
+            margin-left: 24px;         
+            & h4 {
+                align-self: flex-start;
+                height:0;
+            }
+            &:hover h4, &:hover p {            
+                text-overflow: ellipsis; 
+               
+               
+                // &:after {
+                //     content:"...";
+                // }
+            }
+        }
+        &__prix {     
+            text-align: right;
+            align-self: flex-end;
+            margin-right: 12px;
+            width: 15%;
+            line-height: 0;
+        }
+        &__check { 
+            width:0;
+            padding:32px 0; 
+            overflow:hidden;
+            visibility: hidden;
+            align-self:center;
+            justify-self: flex-end; 
+            text-align: center;  
+            border-radius: 0 30px 30px 0;
+            color:$color_background;
+            background-color: $color_tertiary;         
+            transition: transform ease-in 1s;
+            transform-origin: right;
+            & i {  
+                font-size:30px;
+                transform:translateX(200%) rotate(180deg);
+            }
+        }
+        &:hover {
+            transition: all linear 350ms;
+            overflow: hidden;
+            @include box-shad(lighten($color_tertiary, 15%))
+        }
+       
+   
+        &:hover &__check {    
+            padding:32px 0;
+            width:120px;
+            transform-origin: right;
+            transition: all ease-in-out 0.5s;
+            visibility: visible;
+
+            & i {
+                transition: transform linear 0.6s ; 
+                transform: rotate(0deg);
+            }
+        }
+    }
+    & h3 { 
+        margin-left:4%;
+        border-bottom: 3px solid $color_tertiary;
+        width:40px;
+    }
+}

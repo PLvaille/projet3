@@ -1,0 +1,18 @@
+
+@mixin box-shad($color: $color_grey_dark) {
+    box-shadow: 0px 5px 5px $color;
+}
+
+
+@mixin heart_fill {
+    cursor: pointer;
+    color:transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: bold;
+    transform-origin: bottom;
+    transform:scale(1.2);
+    background-image:linear-gradient(to top, $color_primary, $color_secondary);
+    transition:all linear 600ms;
+}
+

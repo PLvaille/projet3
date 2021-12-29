@@ -1,0 +1,72 @@
+.resultat {
+	margin-top:42px;
+	background: $color_grey_light;
+	padding: 7% 0;
+	& h2 {
+		margin-left:4%;
+	}
+	&__card {
+		position: relative;
+		width:80%;
+		@include box-shad;
+		display: flex;
+		flex-direction: column;
+		margin:4% auto;
+		border-radius: 20px;	
+		
+		&__legende {
+			background:$color_background;
+			padding: 4% 0 2% 4%;
+			margin:-1% 0;
+			border-radius: 0 0 20px 20px;
+			& h3{
+				margin: 0;	
+			}
+			& p {
+				margin: 0;
+				padding: 2% 0;
+			}
+			&__like {
+				font-size:30px;
+				position: absolute;
+				right: 7%;
+				bottom:8%;
+				color:$color_grey_darker;
+				&:hover i {
+					@include heart_fill;
+				}
+			}
+		}
+		&:hover {
+			transform-origin: bottom;
+			transform:scale(1.03) scaleY(1.01);
+			transition: all ease-in-out 400ms;
+			@include box-shad($color_primary);
+			&:hover .nouveau {
+				animation : anim_nouveau ease-in-out 0.5s forwards;
+				animation-iteration-count: 3;
+			}
+		}
+		
+	}
+	& img {
+		border-radius: 20px 20px 0 0;
+		z-index: 1;
+		width: 100%;
+		max-height: 180px;
+		object-fit: cover;
+		object-position: 50% 70%;
+
+	}
+	& .nouveau {
+		font-family: 'Roboto-b';
+		display: inline-block;
+		padding:8px 14px;
+		border-radius: 4px;
+		color: darken($color_tertiary, 40%);
+		background: $color_tertiary;
+		position: absolute;
+		right:7%;
+		z-index: 2;
+	}
+}

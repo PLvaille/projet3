@@ -1,0 +1,53 @@
+.index__header {
+	text-align: center;	
+	& img {
+		width: 60%;
+		margin:0 auto;
+		padding:4% 0;
+	}
+	&__location {
+		text-decoration: transparent;
+		cursor: pointer;
+		font-size: 24px;
+		width: 100%;
+		border-top: 2px solid darken($color_grey_dark, 20%);
+		background-color: $color_grey_dark;
+		margin:0;
+		& p {
+			margin:0;
+			padding:5% 0 6% 0;
+			&:hover {
+				transition: all linear 0.2s;
+				transform:scale(1.1);
+				color:$color_primary_darker;
+				text-decoration: underline;
+			}
+		}
+	}
+	& i {
+		padding-right:2%;
+	}
+
+}
+	
+
+.menu__header {
+	display: flex;
+	align-items: center;
+
+	& div:first-child {
+		font-size:32px;	
+		width:32px;
+		position: relative;
+		left:4%;
+		& a:hover {
+			transition:all linear 200ms;
+			color:$color_primary;
+		}
+	}		
+	& div:nth-child(2) {
+		width: 43%;
+		margin:0 auto;
+
+	}
+}

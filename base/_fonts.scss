@@ -1,0 +1,62 @@
+	@font-face { 
+		font-family: "Shrikhand";
+		src: url("fonts/Shrikhand-Regular.ttf") format("truetype");	 
+		font-weight: normal;
+		font-style: normal;	
+	}
+
+	@font-face {
+		font-family: "Roboto-t";
+		src: url("fonts/Roboto-Thin.ttf") format("truetype");	 
+		font-weight: normal;
+		font-style: normal;	
+	}
+
+	@font-face {
+		font-family: "Roboto-r";
+		src: url("fonts/Roboto-Regular.ttf") format("truetype");	 
+		font-weight: normal;
+		font-style: normal;	
+	}
+
+	@font-face {
+		font-family: "Roboto-m";
+		src: url("fonts/Roboto-Medium.ttf") format("truetype");	 
+		font-weight: normal;
+		font-style: normal;	
+	}		
+
+	@font-face {
+		font-family: "Roboto-B";
+		src: url("fonts/Roboto-Bold.ttf") format("truetype");	 
+		font-weight: normal;
+		font-style: normal;	
+	}	
+
+
+.font_title {
+	font-family: 'Shrikhand';
+}
+.font_thin {
+	font-family: 'Roboto-t';
+}
+.font_regular {
+	font-family: 'Roboto-r';
+}
+.font_medium {
+	font-family: 'Roboto-m';
+}
+.font_bold {
+	font-family: 'Roboto-b';
+}
+
+
+* {
+	font-family: 'Roboto-r';
+}
+
+a, a:visited {
+	cursor: pointer;
+	text-decoration: none;
+	color:black;
+}

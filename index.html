@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="main.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+      
+        <title> OhmyFood </title>
+
+    </head>
+
+    <body> 
+        <header> 
+            <div class="index__header">  
+                <img src="img/logo.png" alt="logo" />
+                <div class="index__header__location"> 
+                    <p class="font_medium"><i class="fas fa-map-marker-alt"></i>Paris, Belville</p> 
+                </div>
+            </div>
+        </header>
+         
+        <div class="loadingspinner">  
+            <p class="font_title"> Un instant </p>
+            <i class="fas fa-spinner fa-7x fa-spin"></i>
+        </div>     
+
+
+        <div class="promesse">
+            <div class="promesse__texte">
+                <h1 class="font_bold"> Réservez le menu qui vous convient</h1>
+                <h1 class="font_thin">Découvrez des restaurants d'exception, seléctionnés par nos soins.</h1>
+            </div>
+
+            <div class="btn__cta"><a href="#restaurants"><span>Explorer nos restaurants</span></a></div>       
+        </div> <!--  fin div promesse -->
+
+        <div class="fullpage">
+
+            <div class="tuto">
+                    <h2 class="font_bold"> Fonctionnement</h2>               
+                    <a href="#restaurants">
+                        <div class="tuto__bulle">
+                            <p>1</p>
+                                <div id="icon01" class="tuto__bulle__icon">
+                                     <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <p class="font_regular">Choisissez un restaurant</p>
+                               
+                        </div>
+                    </a>
+        
+      
+
+                
+                    <a href="#restaurants">
+                        <div class="tuto__bulle">
+                            <p>2</p>
+                                <div class="tuto__bulle__icon">
+                                    <span class="fa-stack"><i class="fas fa-ellipsis-v"></i><i class="fas fa-bars"></i></span>
+                                </div>
+                                <p class="font_regular">Composez votre menu</p>
+                        </div>
+                    </a>
+                      
+
+               
+                    <a href="#restaurants">
+                        <div class="tuto__bulle">
+                            <p>3</p>
+                            <div class="tuto__bulle__icon">
+                                <i class="fas fa-store"></i>
+                            </div>
+                                <p class="font_regular">Dégustez au restaurant</p>
+                                
+                        </div>
+                    </a>
+                       
+            </div> <!--  fin div tuto -->
+
+                <div class="resultat">
+                    <h2 class="font_bold" id="restaurants">Restaurants</h2>
+
+                        <div class="resultat__card">
+                            <p class="nouveau">Nouveau</p>
+                             <a href="lapalettedugout.html">                               
+                                <img src="img/lapalettedugout.jpg" alt="Restaurant La palette du goût">
+                                    <div class="resultat__card__legende">
+                                        <h3 class="font_bold">La palette du goût</h3>
+                                        <p class="font_regular">Ménilmontant</p>
+                                            <div class="resultat__card__legende__like">
+                                        <i class="far fa-heart"></i>
+                                             </div>
+                                    </div>
+                            </a>
+                        </div>
+
+                        <div class="resultat__card">
+                            <p class="nouveau">Nouveau</p>
+                             <a href="lanoteenchantee.html">                             
+                                <img src="img/lanoteenchantee.jpg" alt="Restaurant La note enchantée">
+                                    <div class="resultat__card__legende">
+                                        <h3 class="font_bold">La note enchantée</h3>
+                                        <p class="font_regular">Charonne</p>
+                                        <div class="resultat__card__legende__like">
+                                            <i class="far fa-heart"></i>
+                                                 </div>
+                                    </div>
+                            </a>
+                        </div>  
+
+                        <div class="resultat__card">
+                            <a href="alafrancaise.html">
+                                <img src="img/alafrancaise.jpg" alt="Restaurant À la française">
+                                    <div class="resultat__card__legende">
+                                        <h3 class="font_bold">À la française</h3>
+                                        <p class="font_regular">Cité Rouge</p>
+                                        <div class="resultat__card__legende__like">
+                                            <i class="far fa-heart"></i>
+                                                 </div>
+                                    </div>
+                            </a>        
+                        </div>
+
+                        <div class="resultat__card">
+                            <a href="ledelicedessens.html">
+                                <img src="img/ledelicedessens.jpg" alt="Restaunt Le délice des sens">
+                                    <div class="resultat__card__legende">
+                                        <h3 class="font_bold">Le délice des sens</h3>
+                                        <p class="font_regular">Folie-Méricourt</p>
+                                        <div class="resultat__card__legende__like">
+                                            <i class="far fa-heart"></i>
+                                                 </div>
+                                    </div>
+                            </a>       
+                        </div>
+                    </div> <!-- fin div resultat-->
+
+            <footer>   
+                <h3 class="font_title">ohmyfood</h3>
+                    <div>
+                        <ul class="font_regular">
+                            <li><a href="#"><div><i class="fas fa-utensils fa-fw"></i></div>Proposer un restaurant</a></li>
+                            <li><a href="#"><div><i class="fas fa-hands-helping fa-fw"></i></div>Devenir Partenaire</a></li>
+                            <li><a href="#">Mentions légales</a></li>
+                            <li><a href="mailto:#">Contact</a></li>
+                        </ul>
+                    </div>
+            </footer>
+
+      </div> <!-- fin div fullpage -->
+    </body>
+</html>
