@@ -8,13 +8,17 @@ $color_grey_dark : #eaeaea;
 $color_grey_darker : darken($color_grey_dark, 50%);
 $color_grey_purp : #F5EDFF;
 $color_background : #fff;
-$max_width_body : 1024px;
+
 $height_body:100%;
 
-$result_width: (small: 330px, medium:660px, large: 700px);
-$result_txt_width:(small: 260px, medium:520px, large: 600px);
-$result_chek_width:(small:100px, medium:200px, large:300px);
+           $result_width:(small: 300px, normal: 420px, medium:760px, large: 1020px);
+$result_normal_txt_width:(small: 240px, normal: 360px, medium:700px, large: 960px);
+ $result_hover_txt_width:(small: 165px, normal: 360px, medium:700px, large: 960px);
+      $result_chek_width:(small: 120px, normal: 140px, medium:160px, large: 200px);
 
-$breakpoint:(
-    medium: 768px, 
-    large: 1024px);
+$media-queries:(
+    normal:(breakpoint : (min-width:426px)),
+    medium:(breakpoint : (min-width:768px)), 
+    large: (breakpoint : (min-width:1024px))) !default;
+
+

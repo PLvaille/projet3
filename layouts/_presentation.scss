@@ -3,13 +3,30 @@
     flex-direction: column;
     justify-content: center;
     height: auto;
-    max-width: $max_width_body;
+    min-height:200px;
     & img {     
         z-index: 1;
         height:fit-content;
-        max-height: 280px;
+        max-height: 300px;
         object-fit: cover;
         object-position: 50% 80%;
+
+        @include media-query (normal){
+            max-height: 350px;
+            object-position: 50% 70%;
+        }
+
+        @include media-query (medium){
+            max-height: 380px;
+            object-position: 50% 60%;
+        }
+
+        @include media-query (large){
+            max-height: 450px;
+            object-position: 50% 60%;
+        }
+
+
     }
 
     &__titre{     

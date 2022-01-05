@@ -4,12 +4,31 @@
 	flex-direction: column;
 	justify-content: space-evenly;
 	background: $color_grey_light;
-	padding-bottom: 6%;
+	padding-bottom: 2rem;
 		&__texte {
 			width: 80%;	
 			margin:0% auto;
+		
+	
+			@include media-query (medium){
+				width: 90%;
+			}
+	
+	
 			}
 			& h1:nth-child(2) {
-				font-size: 20px;
+				font-size: 1.2rem;
+				@include media-query (normal){
+					font-size: 1.4rem;
+				}
+		
+				@include media-query (medium){
+					font-size: 1.8rem;
+				}
+		
+				@include media-query (large){
+					font-size: 2rem;
+				}
+		
 			}
 }

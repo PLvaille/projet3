@@ -1,29 +1,64 @@
 .section__menu {
+    overflow:hidden;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    margin-block: 0;
     background-color:$color_grey_light;
     padding:2% 0 6% 0;
-    &__resultat {        
-        line-height: 1rem;
-        display:flex;
-        width:330px; 
-        margin:2.5% auto;
+
+    &__resultat {   
+        transition: all ease-in-out 1s;   
+        height: 6rem;
+        overflow: hidden;     
+        display:flex;     
+        margin:22px auto;
         @include box-shad;
         background-color: $color_background;
         border-radius: 30px;
         cursor:pointer;
-        &__sous_texte {                                    
+        width:map-get($result_width, small );
+
+        @include media-query (normal){
+            width: map-get($result_width, normal);
+        }
+
+        @include media-query (medium){
+            width: map-get($result_width, medium);
+        }
+
+        @include media-query (large){
+            width: map-get($result_width, large);
+        }
+
+        &__sous_texte {     
+            display: block;                              
             margin-left: 20px;
-            width: 260px;     
-            max-width: 260px;        
-            min-width: 260px;                             
+            width:map-get($result_normal_txt_width, small);           
+            min-width:map-get($result_normal_txt_width, small);   
+        
+            @include media-query (normal){
+                width: map-get($result_normal_txt_width, normal);
+                min-width: map-get($result_normal_txt_width, normal);
+            }
+    
+            @include media-query (medium){
+                width: map-get($result_normal_txt_width, medium);
+                min-width: map-get($result_normal_txt_width, medium);
+            }
+    
+            @include media-query (large){
+                width: map-get($result_normal_txt_width, large);
+                min-width: map-get($result_normal_txt_width, large);
+            }
+            
             & h4 {
+                margin-block: 1rem;
                 white-space: nowrap;           
                 overflow: hidden;
                 text-overflow: ellipsis;  
             }               
             & p {
+                margin-block: 1rem;
                 white-space: nowrap;           
                 overflow: hidden;
                 text-overflow: ellipsis;  
@@ -32,46 +67,93 @@
         &__prix {     
             text-align: right;
             align-self: flex-end;
-            margin: 0 8px;
-            width: 30px;
+            margin: 0 6px 8px 6px;
+            
+        
+
+
         }
         &__check { 
-            
-            padding:32px 0px;           
             visibility: hidden;
+            padding:40px 0px;  
+            display: contents;         
             align-self:center;
             justify-self: flex-end; 
             text-align: center;  
             border-radius: 0 30px 30px 0;
             color:$color_background;
             background-color: $color_tertiary;         
-            transition: transform ease-in 1s;
-            
+            transition: all ease-in-out 1s;
+            transform: translateX(100%);
+
             & i {  
-                font-size:30px;
-                transform:translateX(200%) rotate(180deg);
+                font-size:1.8rem;
+                transform: rotate(-270deg);
             }
         }
-        &:hover {     
-            transition: all linear 350ms;
-            overflow: hidden;
+        &:hover {   
+            overflow: hidden;  
+            transition: all ease-in-out 350ms;           
             @include box-shad(lighten($color_tertiary, 15%)); 
 
             & .section__menu__resultat__sous_texte {   
-                transition: all linear 0.5s;         
-                width:170px;   
-                min-width: 170px;
-                max-width: 170px;             
+                transition: all ease-in-out 1.2s;   
+                width:map-get($result_hover_txt_width, small);       
+                max-width:map-get($result_hover_txt_width, small);  
+                min-width: map-get($result_hover_txt_width, small);
+                 
+              
+                @include media-query (normal){
+                    transition: all ease-in-out 2.2s;   
+                    width: map-get($result_hover_txt_width, normal); 
+                    max-width:map-get($result_hover_txt_width, normal); 
+                    
+                }
+        
+                @include media-query (medium){
+                    transition: all ease-in-out 3s;   
+                    width: map-get($result_hover_txt_width, medium);
+                    max-width: map-get($result_hover_txt_width, medium);
+                    
+                }
+        
+                @include media-query (large){
+                    transition: all ease-in-out 4s;   
+                    width: map-get($result_hover_txt_width, large);
+                  
+                    max-width: map-get($result_hover_txt_width, large);                    
+                }
+
             } 
-            & .section__menu__resultat__check {      
-                padding:32px 0;
-                width:130px;
+            & .section__menu__resultat__check { 
+                 
+                visibility: visible;  
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                padding:40px 0;
                 transform-origin: right;
-                transition: all ease-in-out 0.5s;
-                visibility: visible;    
+                transform: translateX(0);
+                transition: all ease-in-out 1s;               
+                width:map-get($result_chek_width, small);  
+                
+
+                @include media-query (normal){
+                    width: map-get($result_chek_width, normal);
+                }
+        
+                @include media-query (medium){
+                    width: map-get($result_chek_width, medium);
+                }
+        
+                @include media-query (large){
+                    width: map-get($result_chek_width, large);
+                }
+
                 & i {
-                    transition: transform linear 0.6s ; 
                     transform: rotate(0deg);
+                    transition: transform ease-in-out 1.2s ; 
+                    
                 }
             }        
         }

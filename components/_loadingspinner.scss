@@ -2,7 +2,6 @@
     position: absolute;
     z-index: 999;
     width: 100%;
-    max-width:$max_width_body;  
     height:$height_body;
     text-align: center;
     background: linear-gradient(to bottom, $color_primary_lighter, $color_primary_darker);

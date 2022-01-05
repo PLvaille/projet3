@@ -14,12 +14,36 @@
     @include box-shad(darken($color_grey_dark, 20%));
     background-image: linear-gradient(to bottom, $color_secondary 10%, $color_primary, $color_primary);
 
+        @include media-query (normal){
+        width: 55%;
+        height: 100px;
+        }
+
+        @include media-query (medium){
+            width: 60%;
+            height: 110px;
+        }
+
+        @include media-query (large){
+            height: 120px;
+            width: 65%;
+        }
+
     &:hover { 
         @include box-shad(darken($color_grey_dark, 40%));    
         animation: anim_btn 0.3s ease-in-out forwards reverse;     
     }
     & span {
         color:$color_background;
+        font-size:1.3rem;
+        @include media-query (normal){           
+            font-size:1.4rem;
+          }   
+          @include media-query (medium){           
+            font-size:1.5rem;
+          }     
+          @include media-query (large){         
+            font-size:1.7rem;
+          }     
     }
-
 }

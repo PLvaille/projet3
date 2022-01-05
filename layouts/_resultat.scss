@@ -1,9 +1,20 @@
 .resultat {
-	margin-top:42px;
+	margin-top:2.5rem;
 	background: $color_grey_light;
-	padding: 7% 0;
+	padding: 2rem 0;
+			@include media-query (large){
+				display: flex;
+				flex-wrap: wrap;
+				
+			}
+
 	& h2 {
 		margin-left:4%;
+		@include media-query (large){
+			margin:2rem 0;
+			width: 100%;
+			text-align: center;
+		}
 	}
 	&__card {
 		position: relative;
@@ -11,25 +22,35 @@
 		@include box-shad;
 		display: flex;
 		flex-direction: column;
-		margin:4% auto;
+		margin:2rem auto;
 		border-radius: 20px;	
 		
+			@include media-query (large){
+				width:40%;
+			}
+
 		&__legende {
 			background:$color_background;
-			padding: 4% 0 2% 4%;
-			margin:-1% 0;
+			padding: 16px 0 8px 4%;
+			margin-top: -1%;
 			border-radius: 0 0 20px 20px;
+
+				@include media-query (large){
+					width: 100%;					
+				}
+
 			& h3{
+				margin-block: 0;
 				margin: 0;	
 			}
 			& p {
 				margin: 0;
-				padding: 2% 0;
+				padding: 6px 0;
 			}
 			&__like {
 				font-size:30px;
 				position: absolute;
-				right: 7%;
+				right: 6%;
 				bottom:8%;
 				color:$color_grey_darker;
 				&:hover i {
@@ -53,10 +74,27 @@
 		border-radius: 20px 20px 0 0;
 		z-index: 1;
 		width: 100%;
+		min-height: 180px;
 		max-height: 180px;
 		object-fit: cover;
 		object-position: 50% 70%;
 
+			@include media-query (normal){
+				min-height: 200px;
+				max-height: 200px;
+				object-position: 50% 60%;
+			}
+
+			@include media-query (medium){
+				min-height: 240px;
+				max-height: 240px;
+				object-position: 50% 50%;
+			}
+
+			@include media-query (large){
+				min-height: 300px;
+				max-height: 300px;
+			}
 	}
 	& .nouveau {
 		font-family: 'Roboto-b';

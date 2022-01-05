@@ -3,7 +3,6 @@
     box-shadow: 0px 5px 5px $color;
 }
 
-
 @mixin heart_fill {
     cursor: pointer;
     color:transparent;
@@ -16,3 +15,14 @@
     transition:all linear 600ms;
 }
 
+@mixin media-query ($size) {
+    @each $item, $value in $media-queries {
+        @if $item == $size {
+            @if map-get($value, breakpoint) != null {
+                @media only screen and #{map-get($value, breakpoint)} {
+                    @content;
+                }
+            }
+        }
+    }
+}
