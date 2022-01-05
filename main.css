@@ -850,7 +850,7 @@ footer ul li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 2rem 3rem;
+  margin: 2rem auto;
   border-radius: 20px;
 }
 
