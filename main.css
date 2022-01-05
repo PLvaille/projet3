@@ -483,9 +483,27 @@ body {
 }
 
 .index__header img {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
-  padding: 4% 0;
+  padding: 32px 0;
+}
+
+@media only screen and (min-width: 426px) {
+  .index__header img {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .index__header img {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .index__header img {
+    width: 50%;
+  }
 }
 
 .index__header__location {
@@ -501,7 +519,7 @@ body {
 
 .index__header__location p {
   margin: 0;
-  padding: 5% 0 6% 0;
+  padding: 32px 0 40px 0;
 }
 
 .index__header__location p:hover {
@@ -841,13 +859,13 @@ footer ul li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 2rem auto;
+  margin: 2rem 5rem;
   border-radius: 20px;
 }
 
 @media only screen and (min-width: 1024px) {
   .resultat__card {
-    width: 40%;
+    width: 44%;
   }
 }
 

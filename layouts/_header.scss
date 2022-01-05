@@ -1,9 +1,20 @@
 .index__header {
 	text-align: center;	
 	& img {
-		width: 60%;
+		width: 80%;
 		margin:0 auto;
-		padding:4% 0;
+		padding:32px 0;
+		@include media-query (normal){
+			width: 70%;
+		}
+
+		@include media-query (medium){
+			width: 60%;
+		}
+
+		@include media-query (large){
+			width: 50%;
+		}
 	}
 	&__location {
 		text-decoration: transparent;
@@ -15,7 +26,7 @@
 		margin:0;
 		& p {
 			margin:0;
-			padding:5% 0 6% 0;
+			padding:32px 0 40px 0;
 			&:hover {
 				transition: all linear 0.2s;
 				transform:scale(1.1);
@@ -75,7 +86,7 @@
 		
 		& h1 {
 			margin-block: 1.2rem;
-			
+
 				@include media-query (normal){
 					font-size: 2.8rem;
 				}
