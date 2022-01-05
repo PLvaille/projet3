@@ -7,26 +7,19 @@
     align-items: center;
     margin: 4% auto;
     max-width: 42%;
-    min-width: 220px;
+    min-width: 210px;
     height:80px;
-    border-radius: 50px;
-    padding: 4%;
+    border-radius: 80px;
+    padding: 5%;
     @include box-shad(darken($color_grey_dark, 20%));
     background-image: linear-gradient(to bottom, $color_secondary 10%, $color_primary, $color_primary);
 
-        @include media-query (normal){
-        width: 55%;
+        @include media-query (normal){    
         height: 100px;
         }
 
-        @include media-query (medium){
-            width: 60%;
+        @include media-query (medium){   
             height: 110px;
-        }
-
-        @include media-query (large){
-            height: 120px;
-            width: 65%;
         }
 
     &:hover { 
