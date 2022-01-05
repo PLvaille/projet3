@@ -275,7 +275,8 @@ a, a:visited {
 .loadingspinner {
   position: absolute;
   z-index: 999;
-  width: 1024px;
+  width: 100%;
+  max-width: 1024px;
   height: 100%;
   text-align: center;
   background: -webkit-gradient(linear, left top, left bottom, from(#c9abee), to(#782cd3));
@@ -747,12 +748,11 @@ footer ul li a:hover {
 }
 
 .section__menu__resultat {
-  height: 80px;
+  line-height: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-overflow: ellipsis;
-  width: 80%;
+  width: 330px;
   margin: 2.5% auto;
   -webkit-box-shadow: 0px 5px 5px #eaeaea;
           box-shadow: 0px 5px 5px #eaeaea;
@@ -762,27 +762,21 @@ footer ul li a:hover {
 }
 
 .section__menu__resultat__sous_texte {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  text-overflow: ellipsis;
-  width: 85%;
-  margin-left: 24px;
+  margin-left: 20px;
+  width: 260px;
+  max-width: 260px;
+  min-width: 260px;
 }
 
 .section__menu__resultat__sous_texte h4 {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  height: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.section__menu__resultat__sous_texte:hover h4, .section__menu__resultat__sous_texte:hover p {
+.section__menu__resultat__sous_texte p {
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
@@ -790,15 +784,12 @@ footer ul li a:hover {
   text-align: right;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  margin-right: 12px;
-  width: 15%;
-  line-height: 0;
+  margin: 0 8px;
+  width: 30px;
 }
 
 .section__menu__resultat__check {
-  width: 0;
-  padding: 32px 0;
-  overflow: hidden;
+  padding: 32px 0px;
   visibility: hidden;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -812,8 +803,6 @@ footer ul li a:hover {
   transition: -webkit-transform ease-in 1s;
   transition: transform ease-in 1s;
   transition: transform ease-in 1s, -webkit-transform ease-in 1s;
-  -webkit-transform-origin: right;
-          transform-origin: right;
 }
 
 .section__menu__resultat__check i {
@@ -830,9 +819,17 @@ footer ul li a:hover {
           box-shadow: 0px 5px 5px #d5f3eb;
 }
 
+.section__menu__resultat:hover .section__menu__resultat__sous_texte {
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+  width: 170px;
+  min-width: 170px;
+  max-width: 170px;
+}
+
 .section__menu__resultat:hover .section__menu__resultat__check {
   padding: 32px 0;
-  width: 120px;
+  width: 130px;
   -webkit-transform-origin: right;
           transform-origin: right;
   -webkit-transition: all ease-in-out 0.5s;

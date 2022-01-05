@@ -11,5 +11,10 @@ $color_background : #fff;
 $max_width_body : 1024px;
 $height_body:100%;
 
+$result_width: (small: 330px, medium:660px, large: 700px);
+$result_txt_width:(small: 260px, medium:520px, large: 600px);
+$result_chek_width:(small:100px, medium:200px, large:300px);
 
-
+$breakpoint:(
+    medium: 768px, 
+    large: 1024px);
