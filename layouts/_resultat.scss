@@ -22,11 +22,11 @@
 		@include box-shad;
 		display: flex;
 		flex-direction: column;
-		margin:2rem 5rem;
+		margin:2rem 3rem;
 		border-radius: 20px;	
 		
 			@include media-query (large){
-				width:41%;
+				width:42%;
 			}
 
 		&__legende {
