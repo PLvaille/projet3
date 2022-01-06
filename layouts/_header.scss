@@ -65,7 +65,7 @@
 			font-size: 2.6rem;
 		}
 		@include media-query (large){
-			font-size: 3.6rem;
+			font-size: 3rem;
 		}
 
 
@@ -85,12 +85,11 @@
 				}
 			
 				@include media-query (medium){
-					font-size: 3.5rem;
+					font-size: 3.2rem;
 				}
 			
-				@include media-query (large){
-					
-					font-size: 5rem;
+				@include media-query (large){					
+					font-size: 4.2rem;
 				}
 		}
 	}
