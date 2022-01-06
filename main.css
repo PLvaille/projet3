@@ -347,15 +347,21 @@ h4 {
 }
 
 .loadingspinner p {
-  margin-top: 10%;
+  font-size: 2.5rem;
+  margin: 2rem;
   color: #FFF;
   font-weight: 100;
-  font-size: 42px;
+}
+
+@media only screen and (min-width: 426px) {
+  .loadingspinner p {
+    font-size: 3rem;
+    margin: 3.5rem;
+  }
 }
 
 .loadingspinner i {
   color: #FF79DA;
-  margin-top: 10%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;

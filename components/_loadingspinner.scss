@@ -7,17 +7,20 @@
     background: linear-gradient(to bottom, $color_primary_lighter, $color_primary_darker);
     transform-origin: bottom;  
     animation:spinner 2s 1s forwards;
+    
     & p {
-        
-        margin-top: 10%;
+        font-size:2.5rem;
+        margin: 2rem;
         color:$color_background;
         font-weight: 100;
-        font-size:42px;
+        @include media-query (normal){
+            font-size: 3rem;
+            margin: 3.5rem;
+        }    
     }
-    & i {
+    & i {     
         color:$color_secondary;
-        margin-top:10%;
-        align-self: center;  
+        align-self: center;          
     }
 }
 
