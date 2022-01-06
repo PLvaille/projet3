@@ -7,20 +7,21 @@
     align-items: center;
     margin: 42px auto;
     max-width: 42%;
-    min-width: 210px;
+    min-width: 230px;
     height:80px;
     border-radius: 80px;
-    padding: 5%;
+    padding: 2rem;
     @include box-shad(darken($color_grey_dark, 20%));
     background-image: linear-gradient(to bottom, $color_secondary 10%, $color_primary, $color_primary);
 
         @include media-query (normal){    
         height: 100px;
+        width: 25%;
+        }
+        @include media-query (large){ 
+          width: 22%;
         }
 
-        @include media-query (medium){   
-            height: 110px;
-        }
 
     &:hover { 
         @include box-shad(darken($color_grey_dark, 40%));    
@@ -28,15 +29,15 @@
     }
     & span {
         color:$color_background;
-        font-size:1.3rem;
+        font-size:1.2rem;
         @include media-query (normal){           
-            font-size:1.4rem;
+            font-size:1.3rem;
           }   
           @include media-query (medium){           
-            font-size:1.5rem;
+            font-size:1.4rem;
           }     
           @include media-query (large){         
-            font-size:1.7rem;
+            font-size:1.5rem;
           }     
     }
 }

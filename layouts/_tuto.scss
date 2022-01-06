@@ -71,6 +71,12 @@
 			border-radius: 50%;
 			position: relative;	
 			left:-28px;
+			@include media-query (large){
+				padding:4px 11px;
+			}
+			@include media-query (medium){
+				padding:4px 10px;
+			}
 		}
 
 		& p:last-child {

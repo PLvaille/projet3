@@ -9,25 +9,22 @@
 			width: 80%;	
 			margin:0% auto;
 		
-	
 			@include media-query (medium){
 				width: 90%;
 			}
-	
-	
-			}
-			& h1:nth-child(2) {
-				font-size: 1.2rem;
+		}
+			& h2 {
+				font-size: 1rem;
 				@include media-query (normal){
-					font-size: 1.4rem;
+					font-size: 1.1rem;
 				}
 		
 				@include media-query (medium){
-					font-size: 1.8rem;
+					font-size: 1.2rem;
 				}
 		
 				@include media-query (large){
-					font-size: 2rem;
+					font-size: 1.3rem;
 				}
 		
 			}

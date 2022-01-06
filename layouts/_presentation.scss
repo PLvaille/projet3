@@ -23,7 +23,12 @@
 
         @include media-query (large){
             max-height: 450px;
-            object-position: 50% 60%;
+            object-position: 50% 65%;
+        }
+        
+        @include media-query (xlarge){
+            max-height: 500px;
+            object-position: 50% 70%;
         }
 
 
@@ -53,7 +58,19 @@
         
         & h2 {
             margin-left:12%;
+            @include media-query (large){
+                margin-left:0;
+                font-size: 2.5rem;
+            }
+            @include media-query (large){
+                font-size: 3rem;
+            }
         }
+
+        @include media-query (large){
+            justify-content: space-around;
+        }
+
     }
     
 }

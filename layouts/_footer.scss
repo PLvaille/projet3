@@ -5,12 +5,13 @@ footer {
     padding:40px;
 
     & h3 {
+    padding-left:1rem;
     font-weight: 100 !important;
     }
     
     & ul {
         list-style: none;
-        padding:0;   
+        padding-left: 1rem;   
 
         & li {  
             display: flex;
@@ -30,5 +31,10 @@ footer {
                 }       
             }
         }
+    }
+    @include media-query (large){
+        display: flex;
+        flex-direction: column;
+        padding-left:8rem;
     }
 }

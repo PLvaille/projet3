@@ -64,57 +64,57 @@ a, a:visited {
 
 h1 {
 	font-size:2.1rem;
-		@include media-query (normal){
-			font-size: 2.4rem;
-		}
-
-		@include media-query (medium){
-			font-size: 2.8rem;
-		}
-
-		@include media-query (large){
-			font-size: 3.2rem;
-		}
 }
 h2 {
-	font-size: 1.8rem;
-		@include media-query (normal){
-			font-size: 2rem;
-		}
-
-		@include media-query (medium){
-			font-size: 2.3rem;
-		}
-
-		@include media-query (large){
-			font-size: 2.8rem;
-		}
+	font-size: 1.9rem;
 }
 h3 {
 	font-size: 1.5rem;
-		@include media-query (normal){
-			font-size: 1.6rem;
-		}
-
-		@include media-query (medium){
-			font-size: 1.8rem;
-		}
-
-		@include media-query (large){
-			font-size: 2rem;
-		}
 }
 h4 {
 	font-size:1.1rem;
-		@include media-query (normal){
-			font-size: 1.2rem;
-		}
-
-		@include media-query (medium){
-			font-size: 1.2rem;
-		}
-
-		@include media-query (large){
-			font-size: 1.3rem;
-		}
 }
+
+@include media-query (normal){
+	h1 {
+		font-size: 2.3rem;
+	}
+	h2 {
+		font-size: 2.1rem;
+	}
+	h3 {
+		font-size: 1.6rem;
+	}
+	h4 {
+		font-size: 1.2rem;
+	}			
+}
+
+@include media-query (medium){
+	h1 { 
+		font-size: 2.4rem;
+	}
+	h2 {
+		font-size: 2.2rem;
+	}
+	h3 {
+		font-size: 1.7rem;
+	}
+	h4 {
+		font-size: 1.3rem;
+	}
+}
+
+@include media-query (large){
+	h1 {
+		font-size: 2.5rem;
+	}
+	h2 {
+		font-size: 2.2rem;
+	}
+	h3 {
+		font-size: 1.8rem;
+	}
+}
+
+		

@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     background-color:$color_grey_light;
-    padding:2% 0 6% 0;
+    padding:2% 0;
 
     &__resultat {   
         transition: all ease-in-out 1s;   
@@ -27,7 +27,10 @@
         }
 
         @include media-query (large){
-            width: map-get($result_width, large);
+            width: map-get($result_width, small);
+        }
+        @include media-query (xlarge){
+            width: map-get($result_width, normal);
         }
 
         &__sous_texte {     
@@ -47,8 +50,12 @@
             }
     
             @include media-query (large){
-                width: map-get($result_normal_txt_width, large);
-                min-width: map-get($result_normal_txt_width, large);
+                width: map-get($result_normal_txt_width, small);
+                min-width: map-get($result_normal_txt_width, small);
+            }
+            @include media-query (xlarge){
+                width: map-get($result_normal_txt_width, normal);
+                min-width: map-get($result_normal_txt_width, normal);
             }
             
             & h4 {
@@ -68,10 +75,6 @@
             text-align: right;
             align-self: flex-end;
             margin: 0 6px 8px 6px;
-            
-        
-
-
         }
         &__check { 
             visibility: hidden;
@@ -101,32 +104,30 @@
                 width:map-get($result_hover_txt_width, small);       
                 max-width:map-get($result_hover_txt_width, small);  
                 min-width: map-get($result_hover_txt_width, small);
-                 
-              
+                           
                 @include media-query (normal){
                     transition: all ease-in-out 2.2s;   
                     width: map-get($result_hover_txt_width, normal); 
-                    max-width:map-get($result_hover_txt_width, normal); 
-                    
-                }
-        
+                    max-width:map-get($result_hover_txt_width, normal);                   
+                }        
                 @include media-query (medium){
                     transition: all ease-in-out 3s;   
                     width: map-get($result_hover_txt_width, medium);
-                    max-width: map-get($result_hover_txt_width, medium);
-                    
-                }
-        
+                    max-width: map-get($result_hover_txt_width, medium);                   
+                }       
                 @include media-query (large){
-                    transition: all ease-in-out 4s;   
-                    width: map-get($result_hover_txt_width, large);
-                  
-                    max-width: map-get($result_hover_txt_width, large);                    
+                    transition: all ease-in-out 1s;   
+                    width: map-get($result_hover_txt_width, small);                 
+                    max-width: map-get($result_hover_txt_width, small);                    
+                }
+                @include media-query (xlarge){
+                    transition: all ease-in-out 2s;   
+                    width: map-get($result_hover_txt_width, normal); 
+                    max-width:map-get($result_hover_txt_width, normal);                   
                 }
 
             } 
-            & .section__menu__resultat__check { 
-                 
+            & .section__menu__resultat__check {                 
                 visibility: visible;  
                 display: flex;
                 text-align: center;
@@ -137,17 +138,17 @@
                 transition: all ease-in-out 1s;               
                 width:map-get($result_chek_width, small);  
                 
-
                 @include media-query (normal){
                     width: map-get($result_chek_width, normal);
-                }
-        
+                }        
                 @include media-query (medium){
                     width: map-get($result_chek_width, medium);
-                }
-        
+                }        
                 @include media-query (large){
-                    width: map-get($result_chek_width, large);
+                    width: map-get($result_chek_width, small);
+                }
+                @include media-query (xlarge){
+                    width: map-get($result_chek_width, normal);
                 }
 
                 & i {
@@ -162,7 +163,32 @@
 & h3 { 
     margin-left:4%;
     border-bottom: 3px solid $color_tertiary;
-    width:40px;     
+    width:40px;   
+        @include media-query (large){  
+            margin:0 12%;
+        }
+        @include media-query (xlarge){  
+            margin:0 20%;
+        }
     }
    
+}
+
+#menu {
+    
+    @include media-query (large){
+        display:flex;
+        flex-direction: row; 
+        
+        .section__menu {
+        padding-bottom: 0;
+        }
+    
+    }
+
+}
+#ContainerBtn {
+    background-color: $color_grey_light;
+    width: 100%;
+    padding:1rem;
 }

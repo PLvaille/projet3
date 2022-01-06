@@ -4,21 +4,22 @@ $color_primary_darker : darken(#9356DC, 10%);
 $color_secondary : #FF79DA;
 $color_tertiary : #99E2D0;
 $color_grey_light : #F6F6F6;
-$color_grey_dark : #eaeaea;
+$color_grey_dark : #EAEAEA;
 $color_grey_darker : darken($color_grey_dark, 50%);
 $color_grey_purp : #F5EDFF;
-$color_background : #fff;
-
+$color_background : #FFF;
+$max_width_body:2048px ;
 $height_body:100%;
 
-           $result_width:(small: 300px, normal: 420px, medium:760px, large: 1020px);
-$result_normal_txt_width:(small: 240px, normal: 360px, medium:700px, large: 960px);
- $result_hover_txt_width:(small: 165px, normal: 360px, medium:700px, large: 960px);
-      $result_chek_width:(small: 120px, normal: 140px, medium:160px, large: 200px);
+           $result_width:(small: 300px, normal: 420px, medium:760px);
+$result_normal_txt_width:(small: 240px, normal: 360px, medium:700px);
+ $result_hover_txt_width:(small: 165px, normal: 360px, medium:700px);
+      $result_chek_width:(small: 120px, normal: 140px, medium:160px);
 
 $media-queries:(
     normal:(breakpoint : (min-width:426px)),
     medium:(breakpoint : (min-width:768px)), 
-    large: (breakpoint : (min-width:1024px))) !default;
+    large: (breakpoint : (min-width:1024px)),
+    xlarge: (breakpoint: (min-width:1420px))) !default;
 
 

@@ -67,66 +67,12 @@ h1 {
   font-size: 2.1rem;
 }
 
-@media only screen and (min-width: 426px) {
-  h1 {
-    font-size: 2.4rem;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  h1 {
-    font-size: 2.8rem;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  h1 {
-    font-size: 3.2rem;
-  }
-}
-
 h2 {
-  font-size: 1.8rem;
-}
-
-@media only screen and (min-width: 426px) {
-  h2 {
-    font-size: 2rem;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  h2 {
-    font-size: 2.3rem;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  h2 {
-    font-size: 2.8rem;
-  }
+  font-size: 1.9rem;
 }
 
 h3 {
   font-size: 1.5rem;
-}
-
-@media only screen and (min-width: 426px) {
-  h3 {
-    font-size: 1.6rem;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  h3 {
-    font-size: 1.8rem;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  h3 {
-    font-size: 2rem;
-  }
 }
 
 h4 {
@@ -134,20 +80,44 @@ h4 {
 }
 
 @media only screen and (min-width: 426px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+  h2 {
+    font-size: 2.1rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
   h4 {
     font-size: 1.2rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  h3 {
+    font-size: 1.7rem;
+  }
   h4 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  h4 {
-    font-size: 1.3rem;
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  h3 {
+    font-size: 1.8rem;
   }
 }
 
@@ -217,8 +187,8 @@ h4 {
           transform: scaleY(0);
   -webkit-transform-origin: top;
           transform-origin: top;
-  -webkit-animation: reveal 250ms 2250ms forwards;
-          animation: reveal 250ms 2250ms forwards;
+  -webkit-animation: reveal 250ms 2150ms forwards;
+          animation: reveal 250ms 2150ms forwards;
 }
 
 @-webkit-keyframes reveal_menu {
@@ -378,7 +348,7 @@ h4 {
 
 .loadingspinner p {
   margin-top: 10%;
-  color: #fff;
+  color: #FFF;
   font-weight: 100;
   font-size: 42px;
 }
@@ -407,10 +377,10 @@ h4 {
           align-items: center;
   margin: 42px auto;
   max-width: 42%;
-  min-width: 210px;
+  min-width: 230px;
   height: 80px;
   border-radius: 80px;
-  padding: 5%;
+  padding: 2rem;
   -webkit-box-shadow: 0px 5px 5px #b7b7b7;
           box-shadow: 0px 5px 5px #b7b7b7;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #FF79DA), color-stop(#9356DC), to(#9356DC));
@@ -420,12 +390,13 @@ h4 {
 @media only screen and (min-width: 426px) {
   .btn__cta {
     height: 100px;
+    width: 25%;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .btn__cta {
-    height: 110px;
+    width: 22%;
   }
 }
 
@@ -436,25 +407,25 @@ h4 {
 }
 
 .btn__cta span {
-  color: #fff;
-  font-size: 1.3rem;
+  color: #FFF;
+  font-size: 1.2rem;
 }
 
 @media only screen and (min-width: 426px) {
   .btn__cta span {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .btn__cta span {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .btn__cta span {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -474,26 +445,14 @@ body {
 }
 
 .index__header img {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   padding: 32px 0;
 }
 
-@media only screen and (min-width: 426px) {
-  .index__header img {
-    width: 70%;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .index__header img {
-    width: 60%;
-  }
-}
-
 @media only screen and (min-width: 1024px) {
   .index__header img {
-    width: 50%;
+    width: 35%;
   }
 }
 
@@ -504,7 +463,7 @@ body {
   font-size: 1.4rem;
   width: 100%;
   border-top: 2px solid #b7b7b7;
-  background-color: #eaeaea;
+  background-color: #EAEAEA;
   margin: 0;
 }
 
@@ -530,13 +489,13 @@ body {
 
 @media only screen and (min-width: 768px) {
   .index__header__location {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .index__header__location {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -613,17 +572,18 @@ body {
 footer {
   margin: 0;
   background: #383838;
-  color: #fff;
+  color: #FFF;
   padding: 40px;
 }
 
 footer h3 {
+  padding-left: 1rem;
   font-weight: 100 !important;
 }
 
 footer ul {
   list-style: none;
-  padding: 0;
+  padding-left: 1rem;
 }
 
 footer ul li {
@@ -642,13 +602,26 @@ footer ul li a {
   display: -ms-flexbox;
   display: flex;
   border-bottom: 2px solid transparent;
-  color: #fff !important;
+  color: #FFF !important;
 }
 
 footer ul li a:hover {
   -webkit-transition: all linear 250ms;
   transition: all linear 250ms;
   border-bottom-color: #782cd3;
+}
+
+@media only screen and (min-width: 1024px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 8rem;
+  }
 }
 
 .promesse {
@@ -678,25 +651,25 @@ footer ul li a:hover {
   }
 }
 
-.promesse h1:nth-child(2) {
-  font-size: 1.2rem;
+.promesse h2 {
+  font-size: 1rem;
 }
 
 @media only screen and (min-width: 426px) {
-  .promesse h1:nth-child(2) {
-    font-size: 1.4rem;
+  .promesse h2 {
+    font-size: 1.1rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .promesse h1:nth-child(2) {
-    font-size: 1.8rem;
+  .promesse h2 {
+    font-size: 1.2rem;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .promesse h1:nth-child(2) {
-    font-size: 2rem;
+  .promesse h2 {
+    font-size: 1.3rem;
   }
 }
 
@@ -739,8 +712,8 @@ footer ul li a:hover {
 }
 
 .tuto__bulle {
-  -webkit-box-shadow: 0px 5px 5px #eaeaea;
-          box-shadow: 0px 5px 5px #eaeaea;
+  -webkit-box-shadow: 0px 5px 5px #EAEAEA;
+          box-shadow: 0px 5px 5px #EAEAEA;
   padding: 0 14px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -800,6 +773,18 @@ footer ul li a:hover {
   left: -28px;
 }
 
+@media only screen and (min-width: 1024px) {
+  .tuto__bulle p:first-child {
+    padding: 4px 11px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .tuto__bulle p:first-child {
+    padding: 4px 10px;
+  }
+}
+
 .tuto__bulle p:last-child {
   margin: 0 auto;
   font-weight: bold;
@@ -841,8 +826,8 @@ footer ul li a:hover {
 .resultat__card {
   position: relative;
   width: 80%;
-  -webkit-box-shadow: 0px 5px 5px #eaeaea;
-          box-shadow: 0px 5px 5px #eaeaea;
+  -webkit-box-shadow: 0px 5px 5px #EAEAEA;
+          box-shadow: 0px 5px 5px #EAEAEA;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -861,7 +846,7 @@ footer ul li a:hover {
 }
 
 .resultat__card__legende {
-  background: #fff;
+  background: #FFF;
   padding: 16px 0 8px 4%;
   margin-top: -1%;
   border-radius: 0 0 20px 20px;
@@ -1020,8 +1005,16 @@ footer ul li a:hover {
 @media only screen and (min-width: 1024px) {
   .presentation img {
     max-height: 450px;
-    -o-object-position: 50% 60%;
-       object-position: 50% 60%;
+    -o-object-position: 50% 65%;
+       object-position: 50% 65%;
+  }
+}
+
+@media only screen and (min-width: 1420px) {
+  .presentation img {
+    max-height: 500px;
+    -o-object-position: 50% 70%;
+       object-position: 50% 70%;
   }
 }
 
@@ -1074,6 +1067,26 @@ footer ul li a:hover {
   margin-left: 12%;
 }
 
+@media only screen and (min-width: 1024px) {
+  .presentation__titre h2 {
+    margin-left: 0;
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .presentation__titre h2 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .presentation__titre {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .section__menu {
   overflow: hidden;
   width: 100%;
@@ -1085,7 +1098,7 @@ footer ul li a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #F6F6F6;
-  padding: 2% 0 6% 0;
+  padding: 2% 0;
 }
 
 .section__menu__resultat {
@@ -1097,9 +1110,9 @@ footer ul li a:hover {
   display: -ms-flexbox;
   display: flex;
   margin: 22px auto;
-  -webkit-box-shadow: 0px 5px 5px #eaeaea;
-          box-shadow: 0px 5px 5px #eaeaea;
-  background-color: #fff;
+  -webkit-box-shadow: 0px 5px 5px #EAEAEA;
+          box-shadow: 0px 5px 5px #EAEAEA;
+  background-color: #FFF;
   border-radius: 30px;
   cursor: pointer;
   width: 300px;
@@ -1119,7 +1132,13 @@ footer ul li a:hover {
 
 @media only screen and (min-width: 1024px) {
   .section__menu__resultat {
-    width: 1020px;
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 1420px) {
+  .section__menu__resultat {
+    width: 420px;
   }
 }
 
@@ -1146,8 +1165,15 @@ footer ul li a:hover {
 
 @media only screen and (min-width: 1024px) {
   .section__menu__resultat__sous_texte {
-    width: 960px;
-    min-width: 960px;
+    width: 240px;
+    min-width: 240px;
+  }
+}
+
+@media only screen and (min-width: 1420px) {
+  .section__menu__resultat__sous_texte {
+    width: 360px;
+    min-width: 360px;
   }
 }
 
@@ -1182,7 +1208,7 @@ footer ul li a:hover {
   justify-self: flex-end;
   text-align: center;
   border-radius: 0 30px 30px 0;
-  color: #fff;
+  color: #FFF;
   background-color: #99E2D0;
   -webkit-transition: all ease-in-out 1s;
   transition: all ease-in-out 1s;
@@ -1232,10 +1258,19 @@ footer ul li a:hover {
 
 @media only screen and (min-width: 1024px) {
   .section__menu__resultat:hover .section__menu__resultat__sous_texte {
-    -webkit-transition: all ease-in-out 4s;
-    transition: all ease-in-out 4s;
-    width: 960px;
-    max-width: 960px;
+    -webkit-transition: all ease-in-out 1s;
+    transition: all ease-in-out 1s;
+    width: 165px;
+    max-width: 165px;
+  }
+}
+
+@media only screen and (min-width: 1420px) {
+  .section__menu__resultat:hover .section__menu__resultat__sous_texte {
+    -webkit-transition: all ease-in-out 2s;
+    transition: all ease-in-out 2s;
+    width: 360px;
+    max-width: 360px;
   }
 }
 
@@ -1272,7 +1307,13 @@ footer ul li a:hover {
 
 @media only screen and (min-width: 1024px) {
   .section__menu__resultat:hover .section__menu__resultat__check {
-    width: 200px;
+    width: 120px;
+  }
+}
+
+@media only screen and (min-width: 1420px) {
+  .section__menu__resultat:hover .section__menu__resultat__check {
+    width: 140px;
   }
 }
 
@@ -1289,5 +1330,38 @@ footer ul li a:hover {
   margin-left: 4%;
   border-bottom: 3px solid #99E2D0;
   width: 40px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .section__menu h3 {
+    margin: 0 12%;
+  }
+}
+
+@media only screen and (min-width: 1420px) {
+  .section__menu h3 {
+    margin: 0 20%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #menu .section__menu {
+    padding-bottom: 0;
+  }
+}
+
+#ContainerBtn {
+  background-color: #F6F6F6;
+  width: 100%;
+  padding: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
