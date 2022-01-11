@@ -1,25 +1,33 @@
 .index__header {
 	text-align: center;	
-	& img {
-		width: 60%;
-		margin:0 auto;
-		padding:32px 0;
-
-		@include media-query (large){
-			width: 35%;
-		}
-	}
 	&__location {
 		text-decoration: transparent;
 		cursor: pointer;
-		font-size: 1.4rem;
 		width: 100%;
 		border-top: 2px solid darken($color_grey_dark, 20%);
 		background-color: $color_grey_dark;
 		margin:0;
+		
 		& p {
 			margin:0;
 			padding:32px 0 40px 0;
+			font-size: 1.6rem ;
+
+			@include media-query (normal){
+				font-size: 1.8rem ;
+			}
+	
+			@include media-query (medium){
+				font-size: 2rem ;
+			}
+	
+			@include media-query (large){
+				font-size: 2.2rem ;
+			}
+			
+			@include media-query (xlarge){
+				font-size: 2.5rem ;
+			}
 			&:hover {
 				transition: all linear 0.2s;
 				transform:scale(1.1);
@@ -28,48 +36,54 @@
 			}
 		}
 
-		@include media-query (normal){
-			font-size: 1.7rem;
-		}
-
-		@include media-query (medium){
-			font-size: 1.8rem;
-		}
-
-		@include media-query (large){
-			font-size: 2rem;
-		}
-
 	}
 	& i {
 		padding-right:8px;
+		font-size: 1.4rem ;
+
+		@include media-query (normal){
+			font-size: 1.6rem ;
+		}
+
+		@include media-query (medium){
+			font-size: 1.8rem ;
+		}
+
+		@include media-query (large){
+			font-size: 1.9rem ;
+		}
+		
+		@include media-query (xlarge){
+			font-size: 2.1rem ;
+		}
 	}
 }
 	
 
 .menu__header {
 	display: flex;
-
 	align-items: center;
 
 	& div:first-child {
-		font-size:32px;	
+		
 		width:32px;
 		position: relative;
 		left:4%;
-		@include media-query (normal){
-			font-size: 2rem;
+		& i {
+				font-size: 2rem;
+			@include media-query (normal){
+				font-size: 2.1rem;
+			}
+			@include media-query (medium){	
+				font-size: 2.5rem;
+			}
+			@include media-query (large){	
+				font-size: 3rem;
+			}	
 		}
-	
-		@include media-query (medium){
-			font-size: 2.6rem;
-		}
-		@include media-query (large){
-			font-size: 3rem;
-		}
-
 
 		& a:hover {
+			
 			transition:all linear 200ms;
 			color:$color_primary;
 		}
@@ -79,18 +93,6 @@
 		
 		& h1 {
 			margin-block: 1.2rem;
-
-				@include media-query (normal){
-					font-size: 2.8rem;
-				}
-			
-				@include media-query (medium){
-					font-size: 3.2rem;
-				}
-			
-				@include media-query (large){					
-					font-size: 4.2rem;
-				}
 		}
 	}
 	

@@ -12,17 +12,17 @@
         object-position: 50% 80%;
 
         @include media-query (normal){
-            max-height: 350px;
+            max-height: 330px;
             object-position: 50% 70%;
         }
 
         @include media-query (medium){
-            max-height: 380px;
+            max-height: 370px;
             object-position: 50% 60%;
         }
 
         @include media-query (large){
-            max-height: 450px;
+            max-height: 410px;
             object-position: 50% 65%;
         }
         
@@ -30,8 +30,6 @@
             max-height: 500px;
             object-position: 50% 70%;
         }
-
-
     }
 
     &__titre{     
@@ -57,20 +55,12 @@
         }
         
         & h2 {
-            margin-left:12%;
-            @include media-query (large){
-                margin-left:0;
-                font-size: 2.5rem;
-            }
-            @include media-query (large){
-                font-size: 3rem;
-            }
-        }
+            margin-left:7%;
 
         @include media-query (large){
             justify-content: space-around;
+            margin-left:5%;
         }
-
-    }
-    
+        }
+    }   
 }

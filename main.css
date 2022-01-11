@@ -54,6 +54,7 @@
 }
 
 * {
+  font-size: 1rem;
   font-family: 'Roboto-r';
 }
 
@@ -63,12 +64,17 @@ a, a:visited {
   color: black;
 }
 
+#MainTitle {
+  margin: 20px;
+  font-size: 3rem;
+}
+
 h1 {
-  font-size: 2.1rem;
+  font-size: 1.8rem;
 }
 
 h2 {
-  font-size: 1.9rem;
+  font-size: 1.6rem;
 }
 
 h3 {
@@ -80,41 +86,74 @@ h4 {
 }
 
 @media only screen and (min-width: 426px) {
+  #MainTitle {
+    font-size: 3.2rem;
+  }
   h1 {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
   h2 {
-    font-size: 2.1rem;
+    font-size: 1.7rem;
   }
   h3 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
+  }
+  h4 {
+    font-size: 1.15rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #MainTitle {
+    font-size: 3.7rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.4rem;
   }
   h4 {
     font-size: 1.2rem;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
+  #MainTitle {
+    font-size: 4rem;
+  }
   h1 {
-    font-size: 2.4rem;
+    font-size: 2.7rem;
+  }
+  h2 {
+    font-size: 2.3rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 1420px) {
+  #MainTitle {
+    font-size: 4.5rem;
+  }
+  h1 {
+    font-size: 3rem;
   }
   h2 {
     font-size: 2.2rem;
   }
   h3 {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
   h4 {
     font-size: 1.3rem;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  h1 {
-    font-size: 2.8rem;
-  }
-  h2 {
-    font-size: 2.5rem;
   }
 }
 
@@ -447,23 +486,10 @@ body {
   text-align: center;
 }
 
-.index__header img {
-  width: 60%;
-  margin: 0 auto;
-  padding: 32px 0;
-}
-
-@media only screen and (min-width: 1024px) {
-  .index__header img {
-    width: 35%;
-  }
-}
-
 .index__header__location {
   -webkit-text-decoration: transparent;
           text-decoration: transparent;
   cursor: pointer;
-  font-size: 1.4rem;
   width: 100%;
   border-top: 2px solid #b7b7b7;
   background-color: #EAEAEA;
@@ -473,6 +499,31 @@ body {
 .index__header__location p {
   margin: 0;
   padding: 32px 0 40px 0;
+  font-size: 1.6rem;
+}
+
+@media only screen and (min-width: 426px) {
+  .index__header__location p {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .index__header__location p {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .index__header__location p {
+    font-size: 2.2rem;
+  }
+}
+
+@media only screen and (min-width: 1420px) {
+  .index__header__location p {
+    font-size: 2.5rem;
+  }
 }
 
 .index__header__location p:hover {
@@ -484,26 +535,33 @@ body {
   text-decoration: underline;
 }
 
+.index__header i {
+  padding-right: 8px;
+  font-size: 1.4rem;
+}
+
 @media only screen and (min-width: 426px) {
-  .index__header__location {
-    font-size: 1.7rem;
+  .index__header i {
+    font-size: 1.6rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .index__header__location {
+  .index__header i {
     font-size: 1.8rem;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .index__header__location {
-    font-size: 2rem;
+  .index__header i {
+    font-size: 1.9rem;
   }
 }
 
-.index__header i {
-  padding-right: 8px;
+@media only screen and (min-width: 1420px) {
+  .index__header i {
+    font-size: 2.1rem;
+  }
 }
 
 .menu__header {
@@ -516,26 +574,29 @@ body {
 }
 
 .menu__header div:first-child {
-  font-size: 32px;
   width: 32px;
   position: relative;
   left: 4%;
 }
 
+.menu__header div:first-child i {
+  font-size: 2rem;
+}
+
 @media only screen and (min-width: 426px) {
-  .menu__header div:first-child {
-    font-size: 2rem;
+  .menu__header div:first-child i {
+    font-size: 2.1rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .menu__header div:first-child {
-    font-size: 2.6rem;
+  .menu__header div:first-child i {
+    font-size: 2.5rem;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .menu__header div:first-child {
+  .menu__header div:first-child i {
     font-size: 3rem;
   }
 }
@@ -552,24 +613,6 @@ body {
 
 .menu__header div:nth-child(2) h1 {
   margin-block: 1.2rem;
-}
-
-@media only screen and (min-width: 426px) {
-  .menu__header div:nth-child(2) h1 {
-    font-size: 2.8rem;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .menu__header div:nth-child(2) h1 {
-    font-size: 3.2rem;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .menu__header div:nth-child(2) h1 {
-    font-size: 4.2rem;
-  }
 }
 
 footer {
@@ -872,7 +915,6 @@ footer ul li a:hover {
 }
 
 .resultat__card__legende__like {
-  font-size: 30px;
   position: absolute;
   right: 6%;
   bottom: 8%;
@@ -893,6 +935,16 @@ footer ul li a:hover {
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   -webkit-transition: all linear 600ms;
   transition: all linear 600ms;
+}
+
+.resultat__card__legende__like i {
+  font-size: 1.8rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .resultat__card__legende__like i {
+    font-size: 2.2rem;
+  }
 }
 
 .resultat__card:hover {
@@ -991,7 +1043,7 @@ footer ul li a:hover {
 
 @media only screen and (min-width: 426px) {
   .presentation img {
-    max-height: 350px;
+    max-height: 330px;
     -o-object-position: 50% 70%;
        object-position: 50% 70%;
   }
@@ -999,7 +1051,7 @@ footer ul li a:hover {
 
 @media only screen and (min-width: 768px) {
   .presentation img {
-    max-height: 380px;
+    max-height: 370px;
     -o-object-position: 50% 60%;
        object-position: 50% 60%;
   }
@@ -1007,7 +1059,7 @@ footer ul li a:hover {
 
 @media only screen and (min-width: 1024px) {
   .presentation img {
-    max-height: 450px;
+    max-height: 410px;
     -o-object-position: 50% 65%;
        object-position: 50% 65%;
   }
@@ -1067,26 +1119,14 @@ footer ul li a:hover {
 }
 
 .presentation__titre h2 {
-  margin-left: 12%;
+  margin-left: 7%;
 }
 
 @media only screen and (min-width: 1024px) {
   .presentation__titre h2 {
-    margin-left: 0;
-    font-size: 2.5rem;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .presentation__titre h2 {
-    font-size: 3rem;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .presentation__titre {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    margin-left: 5%;
   }
 }
 
@@ -1118,7 +1158,7 @@ footer ul li a:hover {
   background-color: #FFF;
   border-radius: 30px;
   cursor: pointer;
-  width: 300px;
+  width: 320px;
 }
 
 @media only screen and (min-width: 426px) {
@@ -1135,7 +1175,7 @@ footer ul li a:hover {
 
 @media only screen and (min-width: 1024px) {
   .section__menu__resultat {
-    width: 300px;
+    width: 320px;
   }
 }
 
@@ -1154,15 +1194,15 @@ footer ul li a:hover {
 
 @media only screen and (min-width: 426px) {
   .section__menu__resultat__sous_texte {
-    width: 360px;
-    min-width: 360px;
+    width: 340px;
+    min-width: 340px;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .section__menu__resultat__sous_texte {
-    width: 700px;
-    min-width: 700px;
+    width: 680px;
+    min-width: 680px;
   }
 }
 
@@ -1175,8 +1215,8 @@ footer ul li a:hover {
 
 @media only screen and (min-width: 1420px) {
   .section__menu__resultat__sous_texte {
-    width: 360px;
-    min-width: 360px;
+    width: 340px;
+    min-width: 340px;
   }
 }
 
@@ -1245,8 +1285,8 @@ footer ul li a:hover {
   .section__menu__resultat:hover .section__menu__resultat__sous_texte {
     -webkit-transition: all ease-in-out 2.2s;
     transition: all ease-in-out 2.2s;
-    width: 360px;
-    max-width: 360px;
+    width: 340px;
+    max-width: 340px;
   }
 }
 
@@ -1254,8 +1294,8 @@ footer ul li a:hover {
   .section__menu__resultat:hover .section__menu__resultat__sous_texte {
     -webkit-transition: all ease-in-out 3s;
     transition: all ease-in-out 3s;
-    width: 700px;
-    max-width: 700px;
+    width: 680px;
+    max-width: 680px;
   }
 }
 
@@ -1272,8 +1312,8 @@ footer ul li a:hover {
   .section__menu__resultat:hover .section__menu__resultat__sous_texte {
     -webkit-transition: all ease-in-out 2s;
     transition: all ease-in-out 2s;
-    width: 360px;
-    max-width: 360px;
+    width: 340px;
+    max-width: 340px;
   }
 }
 

@@ -75,6 +75,7 @@
             text-align: right;
             align-self: flex-end;
             margin: 0 6px 8px 6px;
+   
         }
         &__check { 
             visibility: hidden;
@@ -98,6 +99,8 @@
             overflow: hidden;  
             transition: all ease-in-out 350ms;           
             @include box-shad(lighten($color_tertiary, 15%)); 
+
+          
 
             & .section__menu__resultat__sous_texte {   
                 transition: all ease-in-out 1.2s;   
@@ -126,7 +129,10 @@
                     max-width:map-get($result_hover_txt_width, normal);                   
                 }
 
+               
             } 
+
+
             & .section__menu__resultat__check {                 
                 visibility: visible;  
                 display: flex;
